@@ -20,7 +20,7 @@ struct RValue {
 
    void operator=(const RValue&& a) {
        sources = std::move(a.sources);
-       cout << "&& ==" <<endl;
+       cout << "&& ==" << endl;
    }
 
    void operator=(const RValue& a) {
